@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        "vscjava.vscode-maven",
+        "redhat.vscode-community-server-connector"
+    ]
+}
