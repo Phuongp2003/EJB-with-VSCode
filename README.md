@@ -11,7 +11,7 @@
 
 
 ### Prerequisites
-- JDK 8 (jdk1.8.0_202) [check setup folder for setup file]
+- JDK 8 (jdk1.8.0_202)
 - Visual Studio Code Extensions:
   - Community Server Connectors
   - Maven for Java
