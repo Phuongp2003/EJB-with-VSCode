@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>shopmypham-ejb</artifactId>
+            <artifactId>cart-ejb</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

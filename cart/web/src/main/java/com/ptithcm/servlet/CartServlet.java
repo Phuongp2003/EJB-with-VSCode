@@ -12,10 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-//@WebServlet(name = "CartServlet", urlPatterns = {"/cart/*"}) // Remove this
+@WebServlet(name = "CartServlet", urlPatterns = {"/cart/*"}) // Remove this
 public class CartServlet extends HttpServlet {
     
-    @EJB(mappedName="java:global/shopmypham-ejb-1.0/CosmeticCartBean")
+    @EJB(mappedName="com.ptithcm.ejb.CosmeticCart")
     private CosmeticCart cart;
     
     @Override
@@ -23,7 +23,7 @@ public class CartServlet extends HttpServlet {
         if (cart == null) {
             try {
                 InitialContext ic = new InitialContext();
-                cart = (CosmeticCart) ic.lookup("java:comp/env/ejb/CosmeticCart");
+                cart = (CosmeticCart) ic.lookup("com.ptithcm.ejb.CosmeticCart");
             } catch (Exception e) {
                 throw new ServletException("Failed to initialize EJB: " + e.getMessage(), e);
             }

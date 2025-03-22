@@ -3,6 +3,6 @@
 <glassfish-web-app>
     <ejb-ref>
         <ejb-ref-name>ejb/CosmeticCart</ejb-ref-name>
-        <jndi-name>java:global/shopmypham-ejb-1.0/CosmeticCartBean</jndi-name>
+        <jndi-name>com.ptithcm.ejb.CosmeticCart</jndi-name>
     </ejb-ref>
 </glassfish-web-app>
