@@ -1,0 +1,16 @@
+/* AUTOMATICALLY GENERATED ON Sat Mar 22 09:41:41 ICT 2025*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "CosmeticCartBean", "initialize,Remote,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "CosmeticCartBean", "removeProduct,Remote,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "CosmeticCartBean", "initialize,Remote,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "CosmeticCartBean", "getContents,Remote,";
+  permission javax.security.jacc.EJBMethodPermission "CosmeticCartBean", "remove,Remote,";
+  permission javax.security.jacc.EJBMethodPermission "CosmeticCartBean", "addProduct,Remote,java.lang.String";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "CosmeticCartBean", "**";
+};
+
