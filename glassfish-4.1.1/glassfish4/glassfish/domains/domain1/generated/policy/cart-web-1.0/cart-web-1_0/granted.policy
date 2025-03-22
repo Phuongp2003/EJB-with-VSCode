@@ -1,0 +1,15 @@
+/* AUTOMATICALLY GENERATED ON Sat Mar 22 09:41:41 ICT 2025*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebResourcePermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "CartServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+};
+
